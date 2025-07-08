@@ -493,7 +493,7 @@ neural-network-roughness-generate/
 
 ## 📄 License
 
-This project is open source. Feel free to modify and distribute as needed.
+This project is open source (MIT licensed). Feel free to modify and distribute as needed.
 
 ---
 

@@ -1,0 +1,11 @@
+# Tooltips
+TOOLTIP_SOURCE_FOLDER = "Select the parent folder containing the 'albedo' and 'roughness' subfolders for training."
+TOOLTIP_EPOCHS = "Number of complete passes through the entire training dataset."
+TOOLTIP_BATCH_SIZE = "Number of training examples utilized in one iteration."
+TOOLTIP_LEARNING_RATE = "Step size at each iteration while moving toward a minimum of a loss function."
+TOOLTIP_SAVE_FREQ = "Save a model checkpoint every N epochs."
+TOOLTIP_OUTPUT_FOLDER = "The folder where the trained models will be saved."
+TOOLTIP_MODEL_FILENAME = "The filename for the final trained model."
+TOOLTIP_LAMBDA_L1 = "Weight for L1 loss (pixel-wise similarity)."
+TOOLTIP_BETA1 = "Adam optimizer beta1 parameter."
+TOOLTIP_CONTINUE_TRAINING = "If checked, training will resume from the selected model checkpoint instead of starting from scratch."

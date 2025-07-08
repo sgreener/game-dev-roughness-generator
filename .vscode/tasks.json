@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Neural Network App",
+			"type": "shell",
+			"command": "d:/PythonProjects/texture-generating/neural-network-roughness-generate/.venv/Scripts/python.exe",
+			"args": [
+				"run.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$python"
+			]
+		}
+	]
+}

@@ -72,7 +72,7 @@ opencv-python>=4.8.0
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sgreener/game-dev-roughness-generator.git
    cd neural-network-roughness-generate
    ```
 
@@ -80,9 +80,13 @@ opencv-python>=4.8.0
 
    ``` bash
    python -m venv .venv
+
+   .venv/scripts/activate
    ```
 
-   Then activate it (vscode sort of does this automatically)
+   This will create a virtual environment, so future dependencies are installed to it rather then the master copy of python you have installed on your systyem.
+
+   You then nee to activate it, ina command prompt you can do this via `.venv/scripts/activate`. Note, If you are installing in a terminal of vscode, you can pick the environment used in the editor.
 
 3. **Install dependencies**
 
@@ -90,10 +94,21 @@ opencv-python>=4.8.0
    pip install -r requirements.txt
    ```
 
-4. (unsure if this is needed) **Install pytorch - to enable gpu use**
+4. (to enable gpu support) **Install pytorch**
+
+   Depending on the version of the GPU you have....
+
+   For CUDA 11.8...
 
    ``` bash
-   pip install torch --index-url https://download.pytorch.org/whl/cu117
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+   
+   ```
+
+   For CUDA 12.1 (This is the one I used for my Nvidia 3090)...
+
+   ``` bash
+   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
    ```
 
 5. **Run the application**
@@ -101,6 +116,8 @@ opencv-python>=4.8.0
    ```bash
    python run.py
    ```
+
+   or in vscode you can press `F5`
 
 ## 📁 Data Preparation
 

@@ -252,7 +252,7 @@ class GenerateTab(wx.Panel):
             self.model = Pix2PixGAN(device=self.device)
             
             # Load checkpoint
-            checkpoint = torch.load(model_path, map_location=self.device)
+            checkpoint = torch.load(model_path, map_location=self.device, weights_only=True)
             self.model.generator.load_state_dict(checkpoint['generator_state_dict'])
             self.model.generator.eval()
             

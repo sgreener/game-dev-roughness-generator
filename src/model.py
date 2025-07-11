@@ -194,7 +194,7 @@ class Pix2PixGAN:
     
     def load_checkpoint(self, filepath):
         """Load model checkpoint"""
-        checkpoint = torch.load(filepath, map_location=self.device)
+        checkpoint = torch.load(filepath, map_location=self.device, weights_only=True)
         self.generator.load_state_dict(checkpoint['generator_state_dict'])
         self.discriminator.load_state_dict(checkpoint['discriminator_state_dict'])
         self.optimizer_g.load_state_dict(checkpoint['optimizer_g_state_dict'])
